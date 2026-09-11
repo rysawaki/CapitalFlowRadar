@@ -1,0 +1,49 @@
+name: Weekly Capital Flow Update
+
+on:
+  schedule:
+    # Saturday 06:00 JST (Friday 21:00 UTC)
+    - cron: "0 21 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capital-flow-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh market data
+        run: python scripts/update_data.py
+
+      - name: Validate snapshot
+        run: python scripts/validate_data.py
+
+      - name: Commit verified snapshot
+        run: |
+          if git diff --quiet -- dist/data.json; then
+            echo "No data changes"
+            exit 0
+          fi
+          git config user.name "capital-flow-bot"
+          git config user.email "capital-flow-bot@users.noreply.github.com"
+          git add dist/data.json
+          git commit -m "Update weekly capital flow data"
+          git push
