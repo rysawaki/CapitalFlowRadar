@@ -5,6 +5,12 @@ on:
     # Saturday 06:00 JST (Friday 21:00 UTC)
     - cron: "0 21 * * 5"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/weekly-update.yml"
 
 permissions:
   contents: write
