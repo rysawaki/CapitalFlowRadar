@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-10T23:41:52.529838+00:00",
+  "periods": [
+    "1D",
+    "1W",
+    "4W"
+  ],
+  "assets": [
+    {
+      "key": "sp500",
+      "name": "S&P500先物",
+      "symbol": "SPX",
+      "group": "risk",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+      "price": 7631.47,
+      "priceSource": "FRED SP500",
+      "multiplier": 50,
+      "unit": "×指数",
+      "long": 1156793,
+      "short": 222613,
+      "net": 934180,
+      "delta1W": -19048,
+      "delta4W": -2853,
+      "values": {
+        "1D": null,
+        "1W": -7.268212028,
+        "4W": -1.0886291955
+      },
+      "confidence": 0.76,
+      "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
+      "formula": "ネット建玉変化 × 50×指数 × 報告日価格"
+    },
+    {
+      "key": "nasdaq",
+      "name": "NASDAQ100先物",
+      "symbol": "NDX",
+      "group": "risk",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+      "price": 29077.22,
+      "priceSource": "FRED NASDAQ100",
+      "multiplier": 20,
+      "unit": "×指数",
+      "long": 108397,
+      "short": 36520,
+      "net": 71877,
+      "delta1W": -1339,
+      "delta4W": 7518,
+      "values": {
+        "1D": null,
+        "1W": -0.7786879516,
+        "4W": 4.3720507992
+      },
+      "confidence": 0.76,
+      "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
+      "formula": "ネット建玉変化 × 20×指数 × 報告日価格"
+    },
+    {
+      "key": "oil",
+      "name": "WTI原油先物",
+      "symbol": "WTI",
+      "group": "risk",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
+      "price": 91.48,
+      "priceSource": "FRED DCOILWTICO",
+      "multiplier": 1000,
+      "unit": "バレル",
+      "long": 205300,
+      "short": 111019,
+      "net": 94281,
+      "delta1W": 10261,
+      "delta4W": 7323,
+      "values": {
+        "1D": null,
+        "1W": 0.93867628,
+        "4W": 0.66990804
+      },
+      "confidence": 0.82,
+      "note": "",
+      "formula": "ネット建玉変化 × 1000バレル × 報告日価格"
+    },
+    {
+      "key": "copper",
+      "name": "COMEX銅先物",
+      "symbol": "CU",
+      "group": "risk",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
+      "price": 6.6005,
+      "priceSource": "検証済み報告日価格",
+      "multiplier": 25000,
+      "unit": "ポンド",
+      "long": 91430,
+      "short": 18548,
+      "net": 72882,
+      "delta1W": -3389,
+      "delta4W": -2876,
+      "values": {
+        "1D": null,
+        "1W": -0.5592273625,
+        "4W": -0.47457595
+      },
+      "confidence": 0.78,
+      "note": "",
+      "formula": "ネット建玉変化 × 25000ポンド × 報告日価格"
+    },
+    {
+      "key": "gold",
+      "name": "COMEX金先物",
+      "symbol": "AU",
+      "group": "defensive",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
+      "price": 4396.4,
+      "priceSource": "検証済み報告日価格",
+      "multiplier": 100,
+      "unit": "oz",
+      "long": 149721,
+      "short": 12950,
+      "net": 136771,
+      "delta1W": -7976,
+      "delta4W": 6005,
+      "values": {
+        "1D": null,
+        "1W": -3.5065686399999993,
+        "4W": 2.6400382
+      },
+      "confidence": 0.78,
+      "note": "",
+      "formula": "ネット建玉変化 × 100oz × 報告日価格"
+    },
+    {
+      "key": "yen",
+      "name": "円先物",
+      "symbol": "JPY",
+      "group": "defensive",
+      "classification": "先物想定元本",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+      "price": 160.03,
+      "priceSource": "FRED DEXJPUS",
+      "multiplier": 12500000,
+      "unit": "円",
+      "long": 58529,
+      "short": 160717,
+      "net": -102188,
+      "delta1W": -25146,
+      "delta4W": -41363,
+      "values": {
+        "1D": null,
+        "1W": -1.9641629694432294,
+        "4W": -3.2308785852652626
+      },
+      "confidence": 0.72,
+      "note": "正値は円買い、負値は円売り。ドル円でドル換算する。",
+      "formula": "ネット円建玉変化 × 12,500,000円 ÷ ドル円"
+    },
+    {
+      "key": "ust10y",
+      "name": "10年米国債",
+      "symbol": "UST",
+      "group": "defensive",
+      "classification": "先物想定元本（額面）",
+      "date": "2026-09-01",
+      "frequency": "週次",
+      "delay": "火曜基準・原則金曜公表",
+      "source": "CFTC TFF",
+      "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
+      "multiplier": 100000,
+      "unit": "ドル額面",
+      "assetManager": {
+        "long": 3314612,
+        "short": 710399,
+        "net": 2604213,
+        "delta1W": 12141,
+        "delta4W": 9534
+      },
+      "leveragedFund": {
+        "long": 376506,
+        "short": 2439008,
+        "net": -2062502,
+        "delta1W": 71837,
+        "delta4W": 169168
+      },
+      "values": {
+        "1D": null,
+        "1W": 1.2141,
+        "4W": 0.9534
+      },
+      "confidence": 0.62,
+      "formula": "資産運用会社のネット建玉変化 × $100,000額面",
+      "note": "ベーシス取引の影響が大きいレバレッジファンドは別表示し、統合値へ加算しない。"
+    },
+    {
+      "key": "japan",
+      "name": "日本株",
+      "symbol": "JP",
+      "group": "risk",
+      "classification": "実測純フロー",
+      "date": "2026-09-04",
+      "frequency": "週次",
+      "delay": "翌週第4営業日15:30ごろ",
+      "source": "JPX 投資部門別売買状況",
+      "sourceUrl": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/index.html",
+      "values": {
+        "1D": null,
+        "1W": 4.307585327751046,
+        "4W": 2.0812475598325313
+      },
+      "confidence": 0.96,
+      "formula": "海外投資家の現物株買越額 ÷ ドル円",
+      "note": "東京・名古屋二市場の海外投資家差引額。JPX公表値をドル換算。",
+      "raw": {
+        "latestYen": 689342880000,
+        "weeks": [
+          {
+            "date": "2026-09-04",
+            "yen": 689342880000,
+            "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001y0ho-att/stock_val_1_260901.xls"
+          },
+          {
+            "date": "2026-08-28",
+            "yen": -131938537000,
+            "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001vcjs-att/stock_val_1_260804.xls"
+          },
+          {
+            "date": "2026-08-21",
+            "yen": -437811189000,
+            "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001uvgj-att/stock_val_1_260803.xls"
+          },
+          {
+            "date": "2026-08-14",
+            "yen": 213468893000,
+            "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001uhhk-att/stock_val_1_260802.xls"
+          }
+        ],
+        "usdJpy": 160.03
+      }
+    },
+    {
+      "key": "bitcoin",
+      "name": "ビットコインETF",
+      "symbol": "BTC",
+      "group": "risk",
+      "classification": "実測純フロー",
+      "date": "2026-09-10",
+      "frequency": "日次",
+      "delay": "米国市場終了後に順次確定",
+      "source": "Farside Investors",
+      "sourceUrl": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+      "values": {
+        "1D": -0.045,
+        "1W": 0.6935999999999999,
+        "4W": 3.4299
+      },
+      "confidence": 0.9,
+      "formula": "米国現物BTC ETF各銘柄の純流出入合計",
+      "note": "日中暫定値は後から更新されることがある。 現在は検証済み保存値を表示。",
+      "loadState": "保存値",
+      "raw": {
+        "latest": {
+          "date": "2026-09-10",
+          "usdM": -45.0
+        },
+        "last5": [
+          {
+            "date": "2026-09-03",
+            "usdM": 730.8
+          },
+          {
+            "date": "2026-09-04",
+            "usdM": 174.6
+          },
+          {
+            "date": "2026-09-08",
+            "usdM": -46.6
+          },
+          {
+            "date": "2026-09-09",
+            "usdM": -120.2
+          },
+          {
+            "date": "2026-09-10",
+            "usdM": -45.0
+          }
+        ]
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "金ETF",
+      "status": "未接続",
+      "reason": "無料かつ安定した日次保有量データの自動取得経路を検証中"
+    },
+    {
+      "name": "欧州株ETF",
+      "status": "未接続",
+      "reason": "無料データでは地域横断の純設定額を網羅できない"
+    },
+    {
+      "name": "米国株ETF・投信全体",
+      "status": "代替",
+      "reason": "S&P500・NASDAQ先物の資産運用会社ポジションで代替"
+    },
+    {
+      "name": "MMF・現金",
+      "status": "未接続",
+      "reason": "週次公表値の市場間重複を整理中"
+    }
+  ],
+  "errors": [],
+  "disclaimer": "先物は想定元本であり、現金の純流入額ではありません。異なる分類の金額は参考比較で、単純合算しません。"
+}
