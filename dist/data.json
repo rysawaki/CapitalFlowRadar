@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T04:50:19.313005+00:00",
+  "generatedAt": "2026-09-11T04:57:23.193147+00:00",
   "periods": [
     "1D",
     "1W",
@@ -18,8 +18,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": null,
-      "priceSource": null,
+      "price": 7642.75,
+      "priceSource": "Yahoo Finance ES%3DF 報告日終値",
       "multiplier": 50,
       "unit": "×指数",
       "long": 1156793,
@@ -29,12 +29,12 @@
       "delta4W": -2853,
       "values": {
         "1D": null,
-        "1W": null,
-        "4W": null
+        "1W": -7.2789551,
+        "4W": -1.0902382875
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
-      "formula": "ネット建玉変化 × 50×指数"
+      "formula": "ネット建玉変化 × 50×指数 × 報告日価格"
     },
     {
       "key": "nasdaq",
@@ -47,8 +47,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": null,
-      "priceSource": null,
+      "price": 29125.5,
+      "priceSource": "Yahoo Finance NQ%3DF 報告日終値",
       "multiplier": 20,
       "unit": "×指数",
       "long": 108397,
@@ -58,12 +58,12 @@
       "delta4W": 7518,
       "values": {
         "1D": null,
-        "1W": null,
-        "4W": null
+        "1W": -0.77998089,
+        "4W": 4.37931018
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
-      "formula": "ネット建玉変化 × 20×指数"
+      "formula": "ネット建玉変化 × 20×指数 × 報告日価格"
     },
     {
       "key": "oil",
@@ -76,8 +76,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": null,
-      "priceSource": null,
+      "price": 90.22000122070312,
+      "priceSource": "Yahoo Finance CL%3DF 報告日終値",
       "multiplier": 1000,
       "unit": "バレル",
       "long": 205300,
@@ -87,12 +87,12 @@
       "delta4W": 7323,
       "values": {
         "1D": null,
-        "1W": null,
-        "4W": null
+        "1W": 0.9257474325256347,
+        "4W": 0.660681068939209
       },
       "confidence": 0.82,
       "note": "",
-      "formula": "ネット建玉変化 × 1000バレル"
+      "formula": "ネット建玉変化 × 1000バレル × 報告日価格"
     },
     {
       "key": "copper",
