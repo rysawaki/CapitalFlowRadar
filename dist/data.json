@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-10T23:41:52.529838+00:00",
+  "generatedAt": "2026-09-11T04:50:19.313005+00:00",
   "periods": [
     "1D",
     "1W",
@@ -18,8 +18,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 7631.47,
-      "priceSource": "FRED SP500",
+      "price": null,
+      "priceSource": null,
       "multiplier": 50,
       "unit": "×指数",
       "long": 1156793,
@@ -29,12 +29,12 @@
       "delta4W": -2853,
       "values": {
         "1D": null,
-        "1W": -7.268212028,
-        "4W": -1.0886291955
+        "1W": null,
+        "4W": null
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
-      "formula": "ネット建玉変化 × 50×指数 × 報告日価格"
+      "formula": "ネット建玉変化 × 50×指数"
     },
     {
       "key": "nasdaq",
@@ -47,8 +47,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 29077.22,
-      "priceSource": "FRED NASDAQ100",
+      "price": null,
+      "priceSource": null,
       "multiplier": 20,
       "unit": "×指数",
       "long": 108397,
@@ -58,12 +58,12 @@
       "delta4W": 7518,
       "values": {
         "1D": null,
-        "1W": -0.7786879516,
-        "4W": 4.3720507992
+        "1W": null,
+        "4W": null
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
-      "formula": "ネット建玉変化 × 20×指数 × 報告日価格"
+      "formula": "ネット建玉変化 × 20×指数"
     },
     {
       "key": "oil",
@@ -76,8 +76,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 91.48,
-      "priceSource": "FRED DCOILWTICO",
+      "price": null,
+      "priceSource": null,
       "multiplier": 1000,
       "unit": "バレル",
       "long": 205300,
@@ -87,12 +87,12 @@
       "delta4W": 7323,
       "values": {
         "1D": null,
-        "1W": 0.93867628,
-        "4W": 0.66990804
+        "1W": null,
+        "4W": null
       },
       "confidence": 0.82,
       "note": "",
-      "formula": "ネット建玉変化 × 1000バレル × 報告日価格"
+      "formula": "ネット建玉変化 × 1000バレル"
     },
     {
       "key": "copper",
@@ -275,18 +275,18 @@
       "source": "Farside Investors",
       "sourceUrl": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
       "values": {
-        "1D": -0.045,
-        "1W": 0.6935999999999999,
-        "4W": 3.4299
+        "1D": -0.2827,
+        "1W": 0.45589999999999997,
+        "4W": 3.1921999999999997
       },
       "confidence": 0.9,
       "formula": "米国現物BTC ETF各銘柄の純流出入合計",
-      "note": "日中暫定値は後から更新されることがある。 現在は検証済み保存値を表示。",
-      "loadState": "保存値",
+      "note": "日中暫定値は後から更新されることがある。",
+      "loadState": "取得成功",
       "raw": {
         "latest": {
           "date": "2026-09-10",
-          "usdM": -45.0
+          "usdM": -282.7
         },
         "last5": [
           {
@@ -307,7 +307,7 @@
           },
           {
             "date": "2026-09-10",
-            "usdM": -45.0
+            "usdM": -282.7
           }
         ]
       }
