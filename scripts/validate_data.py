@@ -30,6 +30,8 @@ def main() -> None:
         values = asset.get("values", {})
         if not PERIODS.issubset(values):
             raise SystemExit(f"missing periods: {asset.get('key')}")
+        if values.get("1W") is None:
+            raise SystemExit(f"missing weekly value: {asset.get('key')}")
         for period, value in values.items():
             if value is not None and (not isinstance(value, (int, float)) or not math.isfinite(value)):
                 raise SystemExit(f"invalid value: {asset.get('key')} {period}")
