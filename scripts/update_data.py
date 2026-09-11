@@ -329,6 +329,8 @@ def validate_payload(payload: dict) -> None:
     if missing:
         raise RuntimeError(f"Missing required assets: {', '.join(sorted(missing))}")
     for asset in payload["assets"]:
+        if asset.get("values", {}).get("1W") is None:
+            raise RuntimeError(f"Missing weekly value for {asset.get('key')}")
         for period, value in asset.get("values", {}).items():
             if value is not None and (not isinstance(value, (int, float)) or not math.isfinite(value)):
                 raise RuntimeError(f"Invalid {period} value for {asset.get('key')}")
@@ -357,7 +359,7 @@ def main() -> None:
             code="13874A", market_name="E-MINI S&P 500", long_key="asset_mgr_positions_long",
             short_key="asset_mgr_positions_short", change_long_key="change_in_asset_mgr_long",
             change_short_key="change_in_asset_mgr_short", multiplier=50, unit="×指数",
-            price_series="SP500", confidence=0.76,
+            price_series="SP500", yahoo_symbol="ES%3DF", confidence=0.76,
             note="資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
         ),
         position_asset(
@@ -365,7 +367,7 @@ def main() -> None:
             code="209742", market_name="NASDAQ MINI", long_key="asset_mgr_positions_long",
             short_key="asset_mgr_positions_short", change_long_key="change_in_asset_mgr_long",
             change_short_key="change_in_asset_mgr_short", multiplier=20, unit="×指数",
-            price_series="NASDAQ100", confidence=0.76,
+            price_series="NASDAQ100", yahoo_symbol="NQ%3DF", confidence=0.76,
             note="資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
         ),
         position_asset(
@@ -373,7 +375,7 @@ def main() -> None:
             code="067651", market_name=None, long_key="m_money_positions_long_all",
             short_key="m_money_positions_short_all", change_long_key="change_in_m_money_long_all",
             change_short_key="change_in_m_money_short_all", multiplier=1000, unit="バレル",
-            price_series="DCOILWTICO", confidence=0.82,
+            price_series="DCOILWTICO", yahoo_symbol="CL%3DF", confidence=0.82,
         ),
         position_asset(
             key="copper", name="COMEX銅先物", symbol="CU", group="risk", dataset=CFTC_DISAGG,
