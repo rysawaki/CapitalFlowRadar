@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T04:57:23.193147+00:00",
+  "generatedAt": "2026-09-11T23:11:08.659576+00:00",
   "periods": [
     "1D",
     "1W",
@@ -13,24 +13,24 @@
       "symbol": "SPX",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 7642.75,
+      "price": 7680.5,
       "priceSource": "Yahoo Finance ES%3DF 報告日終値",
       "multiplier": 50,
       "unit": "×指数",
-      "long": 1156793,
-      "short": 222613,
-      "net": 934180,
-      "delta1W": -19048,
-      "delta4W": -2853,
+      "long": 1153305,
+      "short": 240944,
+      "net": 912361,
+      "delta1W": -21819,
+      "delta4W": -36120,
       "values": {
         "1D": null,
-        "1W": -7.2789551,
-        "4W": -1.0902382875
+        "1W": -8.379041475,
+        "4W": -13.870983
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
@@ -42,24 +42,24 @@
       "symbol": "NDX",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 29125.5,
+      "price": 29538.75,
       "priceSource": "Yahoo Finance NQ%3DF 報告日終値",
       "multiplier": 20,
       "unit": "×指数",
-      "long": 108397,
-      "short": 36520,
-      "net": 71877,
-      "delta1W": -1339,
-      "delta4W": 7518,
+      "long": 111052,
+      "short": 35526,
+      "net": 75526,
+      "delta1W": 3649,
+      "delta4W": 13861,
       "values": {
         "1D": null,
-        "1W": -0.77998089,
-        "4W": 4.37931018
+        "1W": 2.155737975,
+        "4W": 8.188732275
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
@@ -71,24 +71,24 @@
       "symbol": "WTI",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 90.22000122070312,
+      "price": 93.02999877929688,
       "priceSource": "Yahoo Finance CL%3DF 報告日終値",
       "multiplier": 1000,
       "unit": "バレル",
-      "long": 205300,
-      "short": 111019,
-      "net": 94281,
-      "delta1W": 10261,
-      "delta4W": 7323,
+      "long": 218960,
+      "short": 107229,
+      "net": 111731,
+      "delta1W": 17450,
+      "delta4W": 31815,
       "values": {
         "1D": null,
-        "1W": 0.9257474325256347,
-        "4W": 0.660681068939209
+        "1W": 1.6233734786987304,
+        "4W": 2.95974941116333
       },
       "confidence": 0.82,
       "note": "",
@@ -100,24 +100,24 @@
       "symbol": "CU",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 6.6005,
-      "priceSource": "検証済み報告日価格",
+      "price": 6.738999843597412,
+      "priceSource": "Yahoo Finance HG%3DF 報告日終値",
       "multiplier": 25000,
       "unit": "ポンド",
-      "long": 91430,
-      "short": 18548,
-      "net": 72882,
-      "delta1W": -3389,
-      "delta4W": -2876,
+      "long": 98007,
+      "short": 15853,
+      "net": 82154,
+      "delta1W": 9272,
+      "delta4W": 3127,
       "values": {
         "1D": null,
-        "1W": -0.5592273625,
-        "4W": -0.47457595
+        "1W": 1.5621001637458802,
+        "4W": 0.5268213127732277
       },
       "confidence": 0.78,
       "note": "",
@@ -129,24 +129,24 @@
       "symbol": "AU",
       "group": "defensive",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 4396.4,
-      "priceSource": "検証済み報告日価格",
+      "price": 4393.89990234375,
+      "priceSource": "Yahoo Finance GC%3DF 報告日終値",
       "multiplier": 100,
       "unit": "oz",
-      "long": 149721,
-      "short": 12950,
-      "net": 136771,
-      "delta1W": -7976,
-      "delta4W": 6005,
+      "long": 145804,
+      "short": 10832,
+      "net": 134972,
+      "delta1W": -1799,
+      "delta4W": -2690,
       "values": {
         "1D": null,
-        "1W": -3.5065686399999993,
-        "4W": 2.6400382
+        "1W": -0.7904625924316406,
+        "4W": -1.1819590737304688
       },
       "confidence": 0.78,
       "note": "",
@@ -158,7 +158,7 @@
       "symbol": "JPY",
       "group": "defensive",
       "classification": "先物想定元本",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
@@ -167,15 +167,15 @@
       "priceSource": "FRED DEXJPUS",
       "multiplier": 12500000,
       "unit": "円",
-      "long": 58529,
-      "short": 160717,
-      "net": -102188,
-      "delta1W": -25146,
-      "delta4W": -41363,
+      "long": 81760,
+      "short": 130858,
+      "net": -49098,
+      "delta1W": 53090,
+      "delta4W": 3972,
       "values": {
         "1D": null,
-        "1W": -1.9641629694432294,
-        "4W": -3.2308785852652626
+        "1W": 4.146878710241829,
+        "4W": 0.3102543273136287
       },
       "confidence": 0.72,
       "note": "正値は円買い、負値は円売り。ドル円でドル換算する。",
@@ -187,7 +187,7 @@
       "symbol": "UST",
       "group": "defensive",
       "classification": "先物想定元本（額面）",
-      "date": "2026-09-01",
+      "date": "2026-09-08",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC TFF",
@@ -195,23 +195,23 @@
       "multiplier": 100000,
       "unit": "ドル額面",
       "assetManager": {
-        "long": 3314612,
-        "short": 710399,
-        "net": 2604213,
-        "delta1W": 12141,
-        "delta4W": 9534
+        "long": 3258404,
+        "short": 696723,
+        "net": 2561681,
+        "delta1W": -42532,
+        "delta4W": 7270
       },
       "leveragedFund": {
-        "long": 376506,
-        "short": 2439008,
-        "net": -2062502,
-        "delta1W": 71837,
-        "delta4W": 169168
+        "long": 391836,
+        "short": 2330590,
+        "net": -1938754,
+        "delta1W": 123748,
+        "delta4W": 224960
       },
       "values": {
         "1D": null,
-        "1W": 1.2141,
-        "4W": 0.9534
+        "1W": -4.2532,
+        "4W": 0.727
       },
       "confidence": 0.62,
       "formula": "資産運用会社のネット建玉変化 × $100,000額面",
@@ -269,15 +269,15 @@
       "symbol": "BTC",
       "group": "risk",
       "classification": "実測純フロー",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "frequency": "日次",
       "delay": "米国市場終了後に順次確定",
       "source": "Farside Investors",
       "sourceUrl": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
       "values": {
-        "1D": -0.2827,
-        "1W": 0.45589999999999997,
-        "4W": 3.1921999999999997
+        "1D": 0.0038,
+        "1W": -0.2711,
+        "4W": 3.3270999999999997
       },
       "confidence": 0.9,
       "formula": "米国現物BTC ETF各銘柄の純流出入合計",
@@ -285,14 +285,10 @@
       "loadState": "取得成功",
       "raw": {
         "latest": {
-          "date": "2026-09-10",
-          "usdM": -282.7
+          "date": "2026-09-11",
+          "usdM": 3.8
         },
         "last5": [
-          {
-            "date": "2026-09-03",
-            "usdM": 730.8
-          },
           {
             "date": "2026-09-04",
             "usdM": 174.6
@@ -308,6 +304,10 @@
           {
             "date": "2026-09-10",
             "usdM": -282.7
+          },
+          {
+            "date": "2026-09-11",
+            "usdM": 3.8
           }
         ]
       }
