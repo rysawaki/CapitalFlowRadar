@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "dist" / "data.json"
 REQUIRED = {"sp500", "nasdaq", "oil", "copper", "gold", "yen", "ust10y", "japan", "bitcoin"}
 PERIODS = {"1D", "1W", "4W"}
+TOPICS = {"fed_rates", "boj_yen", "geopolitics", "china", "global_risk"}
 
 
 def main() -> None:
@@ -35,6 +36,13 @@ def main() -> None:
         for period, value in values.items():
             if value is not None and (not isinstance(value, (int, float)) or not math.isfinite(value)):
                 raise SystemExit(f"invalid value: {asset.get('key')} {period}")
+    topics = payload.get("macroTopics", [])
+    topic_keys = {topic.get("key") for topic in topics}
+    if topic_keys != TOPICS:
+        raise SystemExit("missing macro news topics")
+    for topic in topics:
+        if not isinstance(topic.get("items"), list):
+            raise SystemExit(f"invalid topic items: {topic.get('key')}")
     print(f"validated {len(assets)} assets")
 
 

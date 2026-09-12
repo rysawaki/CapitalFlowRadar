@@ -10,9 +10,11 @@ import math
 import re
 import subprocess
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
+from xml.etree import ElementTree
 
 import xlrd
 
@@ -40,6 +42,34 @@ PRICE_OVERRIDES = {
     "copper": {"2026-09-01": 6.6005},
     "gold": {"2026-09-01": 4396.40},
 }
+
+NEWS_TOPICS = [
+    {
+        "key": "fed_rates", "label": "FRB・米金利", "symbol": "FED",
+        "query": "Federal Reserve interest rates inflation bond yields when:7d",
+        "focus": "利下げ・利上げ観測、インフレ指標、米国債利回り",
+    },
+    {
+        "key": "boj_yen", "label": "日銀・円", "symbol": "BOJ",
+        "query": "Bank of Japan BOJ interest rates yen when:7d",
+        "focus": "日銀の政策修正、国内金利、日米金利差と円キャリー",
+    },
+    {
+        "key": "geopolitics", "label": "地政学・供給", "symbol": "GEO",
+        "query": "geopolitical risk oil supply Middle East shipping when:7d",
+        "focus": "原油供給、海上輸送、安全資産需要",
+    },
+    {
+        "key": "china", "label": "中国景気", "symbol": "CN",
+        "query": "China economy stimulus property manufacturing demand when:7d",
+        "focus": "景気対策、不動産、製造業、資源需要",
+    },
+    {
+        "key": "global_risk", "label": "世界のリスク選好", "symbol": "RISK",
+        "query": "global markets risk sentiment stocks bonds dollar when:7d",
+        "focus": "株・債券・ドルの横断的なリスク選好",
+    },
+]
 
 
 def fetch(url: str) -> bytes:
@@ -259,6 +289,56 @@ def parse_flow_value(text: str) -> float:
     return float(text)
 
 
+def news_topic(topic: dict) -> dict:
+    """Collect recent headlines as evidence; causal interpretation stays rule-based."""
+    params = {"q": topic["query"], "hl": "en-US", "gl": "US", "ceid": "US:en"}
+    url = "https://news.google.com/rss/search?" + urlencode(params)
+    root = ElementTree.fromstring(fetch(url))
+    items = []
+    seen = set()
+    for node in root.findall("./channel/item"):
+        title = (node.findtext("title") or "").strip()
+        link = (node.findtext("link") or "").strip()
+        source_node = node.find("source")
+        source = (source_node.text or "").strip() if source_node is not None else ""
+        published_raw = (node.findtext("pubDate") or "").strip()
+        if not title or not link or title.lower() in seen:
+            continue
+        seen.add(title.lower())
+        try:
+            published = parsedate_to_datetime(published_raw).astimezone(timezone.utc).isoformat()
+        except Exception:
+            published = published_raw
+        items.append({"title": title, "url": link, "source": source, "publishedAt": published})
+        if len(items) == 3:
+            break
+    if not items:
+        raise RuntimeError(f"No news for {topic['key']}")
+    return {k: topic[k] for k in ("key", "label", "symbol", "focus")} | {
+        "items": items, "feedUrl": url, "loadState": "取得成功",
+    }
+
+
+def macro_topics(previous: dict) -> tuple[list[dict], list[str]]:
+    previous_topics = {x.get("key"): x for x in previous.get("macroTopics", [])}
+    topics, errors = [], []
+    for topic in NEWS_TOPICS:
+        try:
+            topics.append(news_topic(topic))
+        except Exception as exc:
+            errors.append(f"news_{topic['key']}: {type(exc).__name__}")
+            saved = previous_topics.get(topic["key"])
+            if saved:
+                saved = dict(saved)
+                saved["loadState"] = "直近保存値"
+                topics.append(saved)
+            else:
+                topics.append({k: topic[k] for k in ("key", "label", "symbol", "focus")} | {
+                    "items": [], "feedUrl": "", "loadState": "取得失敗",
+                })
+    return topics, errors
+
+
 def bitcoin_asset() -> dict:
     flows = []
     live = True
@@ -404,11 +484,15 @@ def main() -> None:
             if fallback:
                 assets.append(fallback)
 
+    topics, news_errors = macro_topics(previous)
+    errors.extend(news_errors)
+
     payload = {
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "periods": ["1D", "1W", "4W"],
         "assets": assets,
+        "macroTopics": topics,
         "unavailable": unavailable_assets(),
         "errors": errors,
         "disclaimer": "先物は想定元本であり、現金の純流入額ではありません。異なる分類の金額は参考比較で、単純合算しません。",
