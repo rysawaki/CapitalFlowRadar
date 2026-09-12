@@ -36,6 +36,13 @@ def main() -> None:
         for period, value in values.items():
             if value is not None and (not isinstance(value, (int, float)) or not math.isfinite(value)):
                 raise SystemExit(f"invalid value: {asset.get('key')} {period}")
+        history = asset.get("history", [])
+        if len(history) < 2:
+            raise SystemExit(f"insufficient history: {asset.get('key')}")
+        for point in history:
+            datetime.fromisoformat(point["date"])
+            if not isinstance(point.get("value"), (int, float)) or not math.isfinite(point["value"]):
+                raise SystemExit(f"invalid history: {asset.get('key')}")
     topics = payload.get("macroTopics", [])
     topic_keys = {topic.get("key") for topic in topics}
     if topic_keys != TOPICS:

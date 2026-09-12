@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T01:06:38.638636+00:00",
+  "generatedAt": "2026-09-12T13:08:14.476416+00:00",
   "periods": [
     "1D",
     "1W",
@@ -18,8 +18,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 7680.5,
-      "priceSource": "Yahoo Finance ES%3DF 報告日終値",
+      "price": 7673.52,
+      "priceSource": "FRED SP500",
       "multiplier": 50,
       "unit": "×指数",
       "long": 1153305,
@@ -27,10 +27,63 @@
       "net": 912361,
       "delta1W": -21819,
       "delta4W": -36120,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 929159,
+          "long": 1143723,
+          "short": 214564
+        },
+        {
+          "date": "2026-07-28",
+          "value": 944770,
+          "long": 1159241,
+          "short": 214471
+        },
+        {
+          "date": "2026-08-04",
+          "value": 937033,
+          "long": 1162320,
+          "short": 225287
+        },
+        {
+          "date": "2026-08-11",
+          "value": 948481,
+          "long": 1154700,
+          "short": 206219
+        },
+        {
+          "date": "2026-08-18",
+          "value": 960566,
+          "long": 1165359,
+          "short": 204793
+        },
+        {
+          "date": "2026-08-25",
+          "value": 953228,
+          "long": 1166084,
+          "short": 212856
+        },
+        {
+          "date": "2026-09-01",
+          "value": 934180,
+          "long": 1156793,
+          "short": 222613
+        },
+        {
+          "date": "2026-09-08",
+          "value": 912361,
+          "long": 1153305,
+          "short": 240944
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": -8.379041475,
-        "4W": -13.870983
+        "1W": -8.371426644,
+        "4W": -13.85837712
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
@@ -47,8 +100,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 29538.75,
-      "priceSource": "Yahoo Finance NQ%3DF 報告日終値",
+      "price": 29507.7,
+      "priceSource": "FRED NASDAQ100",
       "multiplier": 20,
       "unit": "×指数",
       "long": 111052,
@@ -56,10 +109,63 @@
       "net": 75526,
       "delta1W": 3649,
       "delta4W": 13861,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 72625,
+          "long": 104664,
+          "short": 32039
+        },
+        {
+          "date": "2026-07-28",
+          "value": 76759,
+          "long": 106927,
+          "short": 30168
+        },
+        {
+          "date": "2026-08-04",
+          "value": 64359,
+          "long": 99819,
+          "short": 35460
+        },
+        {
+          "date": "2026-08-11",
+          "value": 61665,
+          "long": 104250,
+          "short": 42585
+        },
+        {
+          "date": "2026-08-18",
+          "value": 68332,
+          "long": 105786,
+          "short": 37454
+        },
+        {
+          "date": "2026-08-25",
+          "value": 73216,
+          "long": 109400,
+          "short": 36184
+        },
+        {
+          "date": "2026-09-01",
+          "value": 71877,
+          "long": 108397,
+          "short": 36520
+        },
+        {
+          "date": "2026-09-08",
+          "value": 75526,
+          "long": 111052,
+          "short": 35526
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 2.155737975,
-        "4W": 8.188732275
+        "1W": 2.153471946,
+        "4W": 8.180124594
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
@@ -76,8 +182,8 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 93.02999877929688,
-      "priceSource": "Yahoo Finance CL%3DF 報告日終値",
+      "price": 94.21,
+      "priceSource": "FRED DCOILWTICO",
       "multiplier": 1000,
       "unit": "バレル",
       "long": 218960,
@@ -85,10 +191,63 @@
       "net": 111731,
       "delta1W": 17450,
       "delta4W": 31815,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 63979,
+          "long": 187469,
+          "short": 123490
+        },
+        {
+          "date": "2026-07-28",
+          "value": 92943,
+          "long": 193959,
+          "short": 101016
+        },
+        {
+          "date": "2026-08-04",
+          "value": 86958,
+          "long": 189518,
+          "short": 102560
+        },
+        {
+          "date": "2026-08-11",
+          "value": 79916,
+          "long": 190554,
+          "short": 110638
+        },
+        {
+          "date": "2026-08-18",
+          "value": 87479,
+          "long": 195538,
+          "short": 108059
+        },
+        {
+          "date": "2026-08-25",
+          "value": 84020,
+          "long": 196882,
+          "short": 112862
+        },
+        {
+          "date": "2026-09-01",
+          "value": 94281,
+          "long": 205300,
+          "short": 111019
+        },
+        {
+          "date": "2026-09-08",
+          "value": 111731,
+          "long": 218960,
+          "short": 107229
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 1.6233734786987304,
-        "4W": 2.95974941116333
+        "1W": 1.6439645,
+        "4W": 2.99729115
       },
       "confidence": 0.82,
       "note": "",
@@ -114,6 +273,59 @@
       "net": 82154,
       "delta1W": 9272,
       "delta4W": 3127,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 71515,
+          "long": 88235,
+          "short": 16720
+        },
+        {
+          "date": "2026-07-28",
+          "value": 65008,
+          "long": 82988,
+          "short": 17980
+        },
+        {
+          "date": "2026-08-04",
+          "value": 75758,
+          "long": 93173,
+          "short": 17415
+        },
+        {
+          "date": "2026-08-11",
+          "value": 79027,
+          "long": 93911,
+          "short": 14884
+        },
+        {
+          "date": "2026-08-18",
+          "value": 78648,
+          "long": 92097,
+          "short": 13449
+        },
+        {
+          "date": "2026-08-25",
+          "value": 76271,
+          "long": 92107,
+          "short": 15836
+        },
+        {
+          "date": "2026-09-01",
+          "value": 72882,
+          "long": 91430,
+          "short": 18548
+        },
+        {
+          "date": "2026-09-08",
+          "value": 82154,
+          "long": 98007,
+          "short": 15853
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
         "1W": 1.5621001637458802,
@@ -143,6 +355,59 @@
       "net": 134972,
       "delta1W": -1799,
       "delta4W": -2690,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 124831,
+          "long": 141487,
+          "short": 16656
+        },
+        {
+          "date": "2026-07-28",
+          "value": 119795,
+          "long": 135093,
+          "short": 15298
+        },
+        {
+          "date": "2026-08-04",
+          "value": 130766,
+          "long": 139809,
+          "short": 9043
+        },
+        {
+          "date": "2026-08-11",
+          "value": 137662,
+          "long": 148634,
+          "short": 10972
+        },
+        {
+          "date": "2026-08-18",
+          "value": 141648,
+          "long": 154595,
+          "short": 12947
+        },
+        {
+          "date": "2026-08-25",
+          "value": 144747,
+          "long": 159819,
+          "short": 15072
+        },
+        {
+          "date": "2026-09-01",
+          "value": 136771,
+          "long": 149721,
+          "short": 12950
+        },
+        {
+          "date": "2026-09-08",
+          "value": 134972,
+          "long": 145804,
+          "short": 10832
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
         "1W": -0.7904625924316406,
@@ -163,7 +428,7 @@
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 160.03,
+      "price": 156.11,
       "priceSource": "FRED DEXJPUS",
       "multiplier": 12500000,
       "unit": "円",
@@ -172,10 +437,63 @@
       "net": -49098,
       "delta1W": 53090,
       "delta4W": 3972,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": -96185,
+          "long": 81033,
+          "short": 177218
+        },
+        {
+          "date": "2026-07-28",
+          "value": -101990,
+          "long": 76752,
+          "short": 178742
+        },
+        {
+          "date": "2026-08-04",
+          "value": -60825,
+          "long": 75758,
+          "short": 136583
+        },
+        {
+          "date": "2026-08-11",
+          "value": -53070,
+          "long": 74973,
+          "short": 128043
+        },
+        {
+          "date": "2026-08-18",
+          "value": -67971,
+          "long": 67776,
+          "short": 135747
+        },
+        {
+          "date": "2026-08-25",
+          "value": -77042,
+          "long": 66528,
+          "short": 143570
+        },
+        {
+          "date": "2026-09-01",
+          "value": -102188,
+          "long": 58529,
+          "short": 160717
+        },
+        {
+          "date": "2026-09-08",
+          "value": -49098,
+          "long": 81760,
+          "short": 130858
+        }
+      ],
+      "historyMetric": "ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 4.146878710241829,
-        "4W": 0.3102543273136287
+        "1W": 4.251008903977964,
+        "4W": 0.31804496829158924
       },
       "confidence": 0.72,
       "note": "正値は円買い、負値は円売り。ドル円でドル換算する。",
@@ -208,6 +526,59 @@
         "delta1W": 123748,
         "delta4W": 224960
       },
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 2537186,
+          "long": 3270327,
+          "short": 733141
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2611964,
+          "long": 3349615,
+          "short": 737651
+        },
+        {
+          "date": "2026-08-04",
+          "value": 2594679,
+          "long": 3318443,
+          "short": 723764
+        },
+        {
+          "date": "2026-08-11",
+          "value": 2554411,
+          "long": 3290600,
+          "short": 736189
+        },
+        {
+          "date": "2026-08-18",
+          "value": 2585495,
+          "long": 3353552,
+          "short": 768057
+        },
+        {
+          "date": "2026-08-25",
+          "value": 2592072,
+          "long": 3282567,
+          "short": 690495
+        },
+        {
+          "date": "2026-09-01",
+          "value": 2604213,
+          "long": 3314612,
+          "short": 710399
+        },
+        {
+          "date": "2026-09-08",
+          "value": 2561681,
+          "long": 3258404,
+          "short": 696723
+        }
+      ],
+      "historyMetric": "資産運用会社ネット建玉",
+      "historyUnit": "枚",
+      "historyChart": "line",
       "values": {
         "1D": null,
         "1W": -4.2532,
@@ -230,9 +601,30 @@
       "sourceUrl": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/index.html",
       "values": {
         "1D": null,
-        "1W": 4.307585327751046,
-        "4W": 2.0812475598325313
+        "1W": 4.415750944846582,
+        "4W": 2.133508724617257
       },
+      "history": [
+        {
+          "date": "2026-08-14",
+          "value": 1.3674261290115943
+        },
+        {
+          "date": "2026-08-21",
+          "value": -2.8045044455832424
+        },
+        {
+          "date": "2026-08-28",
+          "value": -0.8451639036576771
+        },
+        {
+          "date": "2026-09-04",
+          "value": 4.415750944846582
+        }
+      ],
+      "historyMetric": "海外投資家の週間純フロー",
+      "historyUnit": "$B",
+      "historyChart": "bar",
       "confidence": 0.96,
       "formula": "海外投資家の現物株買越額 ÷ ドル円",
       "note": "東京・名古屋二市場の海外投資家差引額。JPX公表値をドル換算。",
@@ -260,7 +652,7 @@
             "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001uhhk-att/stock_val_1_260802.xls"
           }
         ],
-        "usdJpy": 160.03
+        "usdJpy": 156.11
       }
     },
     {
@@ -269,26 +661,115 @@
       "symbol": "BTC",
       "group": "risk",
       "classification": "実測純フロー",
-      "date": "2026-09-11",
+      "date": "2026-09-10",
       "frequency": "日次",
       "delay": "米国市場終了後に順次確定",
       "source": "Farside Investors",
       "sourceUrl": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
       "values": {
-        "1D": 0.006,
-        "1W": -0.2689,
-        "4W": 3.3293000000000004
+        "1D": -0.045,
+        "1W": 0.6935999999999999,
+        "4W": 3.4299
       },
+      "history": [
+        {
+          "date": "2026-08-13",
+          "value": -0.1311
+        },
+        {
+          "date": "2026-08-14",
+          "value": -0.0562
+        },
+        {
+          "date": "2026-08-17",
+          "value": 0.2975
+        },
+        {
+          "date": "2026-08-18",
+          "value": 0.18930000000000002
+        },
+        {
+          "date": "2026-08-19",
+          "value": 0.5172
+        },
+        {
+          "date": "2026-08-20",
+          "value": 0.6063
+        },
+        {
+          "date": "2026-08-21",
+          "value": 0.3075
+        },
+        {
+          "date": "2026-08-24",
+          "value": 0.3376
+        },
+        {
+          "date": "2026-08-25",
+          "value": 0.3143
+        },
+        {
+          "date": "2026-08-26",
+          "value": 0.2322
+        },
+        {
+          "date": "2026-08-27",
+          "value": 0.24230000000000002
+        },
+        {
+          "date": "2026-08-28",
+          "value": -0.2019
+        },
+        {
+          "date": "2026-08-31",
+          "value": 0.21669999999999998
+        },
+        {
+          "date": "2026-09-01",
+          "value": -0.2365
+        },
+        {
+          "date": "2026-09-02",
+          "value": 0.1011
+        },
+        {
+          "date": "2026-09-03",
+          "value": 0.7308
+        },
+        {
+          "date": "2026-09-04",
+          "value": 0.1746
+        },
+        {
+          "date": "2026-09-08",
+          "value": -0.0466
+        },
+        {
+          "date": "2026-09-09",
+          "value": -0.1202
+        },
+        {
+          "date": "2026-09-10",
+          "value": -0.045
+        }
+      ],
+      "historyMetric": "現物ETF日次純フロー",
+      "historyUnit": "$B",
+      "historyChart": "bar",
       "confidence": 0.9,
       "formula": "米国現物BTC ETF各銘柄の純流出入合計",
-      "note": "日中暫定値は後から更新されることがある。",
-      "loadState": "取得成功",
+      "note": "日中暫定値は後から更新されることがある。 現在は検証済み保存値を表示。",
+      "loadState": "保存値",
       "raw": {
         "latest": {
-          "date": "2026-09-11",
-          "usdM": 6.0
+          "date": "2026-09-10",
+          "usdM": -45.0
         },
         "last5": [
+          {
+            "date": "2026-09-03",
+            "usdM": 730.8
+          },
           {
             "date": "2026-09-04",
             "usdM": 174.6
@@ -303,11 +784,7 @@
           },
           {
             "date": "2026-09-10",
-            "usdM": -282.7
-          },
-          {
-            "date": "2026-09-11",
-            "usdM": 6.0
+            "usdM": -45.0
           }
         ]
       }
@@ -333,10 +810,10 @@
           "publishedAt": "2026-09-10T20:40:00+00:00"
         },
         {
-          "title": "Treasury yields remain near multiyear highs as August CPI shows sticky inflation - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5BYnVhZnRLMjNfTURqaGdKS3kweldtU0ZzdmlLZllvcE1uUzRBbjFCNmdjcjdJTmozVUhUbG5JX2lWVnRSQm5kMTUyQmlFbXhNRnlXS1RaYUcyZk1XN0JPaDhpZjdKYkxhcEV0RHE1UdIBdEFVX3lxTE1ldmROYW9MQTFHWEx3b0Q5SWwzMjFDd3BNQkd1RExKdk9HRWZubEVydUJDTXZkS3N0MWwtQkllTWVIVDhtRWFhQ3FwU1FpSGxKYXo1aGQta2dweEpJQmtEdERzaDVZWVdwRmNuRGRKaGVha0dj?oc=5",
-          "source": "CNBC",
-          "publishedAt": "2026-09-11T08:35:57+00:00"
+          "title": "Economists think a rate hike is coming. Here’s what that could mean for the economy - news.northeastern.edu",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwQ3BHUFg3c0VXdWFNSGFpR3JSaFBodUZxMmJHUzJZMTlhVldTMVZqbWEzSGFvckhhVGVJbWtlOVpPcHNxNW5GaWdWV0NYN09zVTBLMVJkdVcwUG1HdGkyOWZsZmx3akoyaEFxakIyQ25jY1pONldYanpwTQ?oc=5",
+          "source": "news.northeastern.edu",
+          "publishedAt": "2026-09-11T19:37:30+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=Federal+Reserve+interest+rates+inflation+bond+yields+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
@@ -377,9 +854,9 @@
       "focus": "原油供給、海上輸送、安全資産需要",
       "items": [
         {
-          "title": "Oil tops $100 as Middle East supply risks intensify - Oil & Gas Journal",
+          "title": "Oil tops $100 as Middle East supply risks intensify - ogj.com",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTHB3MXh6VFFXeThtMGhLcGRldUh1NmRGVDN3XzNvVmRhVlBEek5NMThxdUR3cTkxM0xtcUJoSTRfci1yZ2c0bnVrRG9oUk5FNTRSNEMzc05uU1Q4UE1wRlJhOVZFT3NOT1NxM256cHVIX21SRHN1YWdZS2lqN3hPcFQ4S05pLVpIcEtReldmMHN5S1lJcjBXS0ZuOHlTcXdVaGZyZXpwVmVVT1NsMHdTRVEyMHdGc083cHRj?oc=5",
-          "source": "Oil & Gas Journal",
+          "source": "ogj.com",
           "publishedAt": "2026-09-09T17:52:27+00:00"
         },
         {
@@ -411,9 +888,9 @@
           "publishedAt": "2026-09-11T12:30:05+00:00"
         },
         {
-          "title": "Beijing Recapitalises the Banks, but China’s Credit Engine Still Has No Spark - thedarksideoftheboom.substack.com",
+          "title": "Beijing Recapitalises the Banks, but China’s Credit Engine Still Has No Spark - The Dark Side Of The Boom",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObmdWd2ZXMmZLMjlQR3BlUWlWYmtwdEQ5Rk5zLVcyY3AtS3FIdi1WckdjbXZ3QkRuMWhjRnJrZVc1VXIyajRRaXRyY0E4a0pVTDZaRWY4US1YMjViSkxoS0ZNdnI3UGh1akctYmJQLUdhWFduOUI5d3lKN3JuVEphR0FMMnR1Zw?oc=5",
-          "source": "thedarksideoftheboom.substack.com",
+          "source": "The Dark Side Of The Boom",
           "publishedAt": "2026-09-08T09:00:42+00:00"
         },
         {

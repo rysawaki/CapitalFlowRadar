@@ -178,6 +178,16 @@ def position_asset(
     if price is not None:
         values["1W"] = delta_1w * multiplier * price / 1e9
         values["4W"] = delta_4w * multiplier * price / 1e9
+    history = []
+    for item in reversed(rows[:8]):
+        item_long = number(item, long_key)
+        item_short = number(item, short_key)
+        history.append({
+            "date": item["report_date_as_yyyy_mm_dd"][:10],
+            "value": item_long - item_short,
+            "long": item_long,
+            "short": item_short,
+        })
     return {
         "key": key, "name": name, "symbol": symbol, "group": group,
         "classification": classification, "date": date, "frequency": "週次",
@@ -185,6 +195,7 @@ def position_asset(
         "sourceUrl": dataset, "price": price, "priceSource": price_source,
         "multiplier": multiplier, "unit": unit, "long": long_pos, "short": short_pos,
         "net": net, "delta1W": delta_1w, "delta4W": delta_4w,
+        "history": history, "historyMetric": "ネット建玉", "historyUnit": "枚", "historyChart": "line",
         "values": values, "confidence": confidence, "note": note,
         "formula": f"ネット建玉変化 × {multiplier:g}{unit}" + (" × 報告日価格" if price is not None else ""),
     }
@@ -205,12 +216,23 @@ def treasury_asset() -> dict:
         delta_4w = net - (number(old, long_key) - number(old, short_key))
         return {"long": long_pos, "short": short_pos, "net": net, "delta1W": delta_1w, "delta4W": delta_4w}
     asset_mgr, leveraged = side("asset"), side("lev")
+    history = []
+    for item in reversed(rows[:8]):
+        long_pos = number(item, "asset_mgr_positions_long")
+        short_pos = number(item, "asset_mgr_positions_short")
+        history.append({
+            "date": item["report_date_as_yyyy_mm_dd"][:10],
+            "value": long_pos - short_pos,
+            "long": long_pos,
+            "short": short_pos,
+        })
     return {
         "key": "ust10y", "name": "10年米国債", "symbol": "UST", "group": "defensive",
         "classification": "先物想定元本（額面）", "date": date, "frequency": "週次",
         "delay": "火曜基準・原則金曜公表", "source": "CFTC TFF", "sourceUrl": CFTC_TFF,
         "multiplier": 100000, "unit": "ドル額面", "assetManager": asset_mgr,
         "leveragedFund": leveraged,
+        "history": history, "historyMetric": "資産運用会社ネット建玉", "historyUnit": "枚", "historyChart": "line",
         "values": {"1D": None, "1W": asset_mgr["delta1W"] * 100000 / 1e9, "4W": asset_mgr["delta4W"] * 100000 / 1e9},
         "confidence": 0.62,
         "formula": "資産運用会社のネット建玉変化 × $100,000額面",
@@ -269,11 +291,16 @@ def jpx_asset(usd_jpy: float) -> dict:
     latest = observations[0]
     value_1w = latest["yen"] / usd_jpy / 1e9
     value_4w = sum(o["yen"] for o in observations) / usd_jpy / 1e9
+    history = [
+        {"date": o["date"], "value": o["yen"] / usd_jpy / 1e9}
+        for o in reversed(observations)
+    ]
     return {
         "key": "japan", "name": "日本株", "symbol": "JP", "group": "risk",
         "classification": "実測純フロー", "date": latest["date"], "frequency": "週次",
         "delay": "翌週第4営業日15:30ごろ", "source": "JPX 投資部門別売買状況",
         "sourceUrl": JPX_PAGE, "values": {"1D": None, "1W": value_1w, "4W": value_4w},
+        "history": history, "historyMetric": "海外投資家の週間純フロー", "historyUnit": "$B", "historyChart": "bar",
         "confidence": 0.96, "formula": "海外投資家の現物株買越額 ÷ ドル円",
         "note": "東京・名古屋二市場の海外投資家差引額。JPX公表値をドル換算。",
         "raw": {"latestYen": latest["yen"], "weeks": observations, "usdJpy": usd_jpy},
@@ -367,6 +394,8 @@ def bitcoin_asset() -> dict:
         "delay": "米国市場終了後に順次確定", "source": "Farside Investors",
         "sourceUrl": FARSIDE,
         "values": {"1D": latest["usdM"] / 1000, "1W": sum(x["usdM"] for x in flows[-5:]) / 1000, "4W": sum(x["usdM"] for x in flows[-20:]) / 1000},
+        "history": [{"date": x["date"], "value": x["usdM"] / 1000} for x in flows[-20:]],
+        "historyMetric": "現物ETF日次純フロー", "historyUnit": "$B", "historyChart": "bar",
         "confidence": 0.90, "formula": "米国現物BTC ETF各銘柄の純流出入合計",
         "note": "日中暫定値は後から更新されることがある。" + ("" if live else " 現在は検証済み保存値を表示。"),
         "loadState": "取得成功" if live else "保存値",
