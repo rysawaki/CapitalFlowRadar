@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T23:57:22.128159+00:00",
+  "generatedAt": "2026-10-03T00:22:44.504796+00:00",
   "periods": [
     "1D",
     "1W",
@@ -13,27 +13,21 @@
       "symbol": "SPX",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 7831.75,
+      "price": 7732.0,
       "priceSource": "Yahoo Finance ES%3DF 報告日終値",
       "multiplier": 50,
       "unit": "×指数",
-      "long": 1118655,
-      "short": 184200,
-      "net": 934455,
-      "delta1W": 29771,
-      "delta4W": -18773,
+      "long": 1104434,
+      "short": 200431,
+      "net": 904003,
+      "delta1W": -30452,
+      "delta4W": -30177,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 937033,
-          "long": 1162320,
-          "short": 225287
-        },
         {
           "date": "2026-08-11",
           "value": 948481,
@@ -75,6 +69,12 @@
           "value": 934455,
           "long": 1118655,
           "short": 184200
+        },
+        {
+          "date": "2026-09-29",
+          "value": 904003,
+          "long": 1104434,
+          "short": 200431
         }
       ],
       "historyMetric": "ネット建玉",
@@ -82,8 +82,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 11.6579514625,
-        "4W": -7.3512721375
+        "1W": -11.7727432,
+        "4W": -11.6664282
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。レバレッジファンドのヘッジは統合値へ加算しない。",
@@ -95,27 +95,21 @@
       "symbol": "NDX",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/gpe5-46if.json",
-      "price": 31028.5,
+      "price": 30613.25,
       "priceSource": "Yahoo Finance NQ%3DF 報告日終値",
       "multiplier": 20,
       "unit": "×指数",
-      "long": 106240,
-      "short": 34020,
-      "net": 72220,
-      "delta1W": 5409,
-      "delta4W": -996,
+      "long": 108558,
+      "short": 38814,
+      "net": 69744,
+      "delta1W": -2476,
+      "delta4W": -2133,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 64359,
-          "long": 99819,
-          "short": 35460
-        },
         {
           "date": "2026-08-11",
           "value": 61665,
@@ -157,6 +151,12 @@
           "value": 72220,
           "long": 106240,
           "short": 34020
+        },
+        {
+          "date": "2026-09-29",
+          "value": 69744,
+          "long": 108558,
+          "short": 38814
         }
       ],
       "historyMetric": "ネット建玉",
@@ -164,8 +164,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 3.35666313,
-        "4W": -0.61808772
+        "1W": -1.51596814,
+        "4W": -1.305961245
       },
       "confidence": 0.76,
       "note": "資産運用会社の方向を採用。S&P500との重複があるため統合判定では減衰する。",
@@ -177,27 +177,21 @@
       "symbol": "WTI",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 94.58999633789062,
+      "price": 89.37999725341797,
       "priceSource": "Yahoo Finance CL%3DF 報告日終値",
       "multiplier": 1000,
       "unit": "バレル",
-      "long": 223190,
-      "short": 121362,
-      "net": 101828,
-      "delta1W": -4451,
-      "delta4W": 17808,
+      "long": 209028,
+      "short": 129436,
+      "net": 79592,
+      "delta1W": -22236,
+      "delta4W": -14689,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 86958,
-          "long": 189518,
-          "short": 102560
-        },
         {
           "date": "2026-08-11",
           "value": 79916,
@@ -239,6 +233,12 @@
           "value": 101828,
           "long": 223190,
           "short": 121362
+        },
+        {
+          "date": "2026-09-29",
+          "value": 79592,
+          "long": 209028,
+          "short": 129436
         }
       ],
       "historyMetric": "ネット建玉",
@@ -246,8 +246,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": -0.42102007369995115,
-        "4W": 1.6844586547851563
+        "1W": -1.987453618927002,
+        "4W": -1.3129027796554567
       },
       "confidence": 0.82,
       "note": "",
@@ -259,27 +259,21 @@
       "symbol": "CU",
       "group": "risk",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 6.759500026702881,
+      "price": 6.543499946594238,
       "priceSource": "Yahoo Finance HG%3DF 報告日終値",
       "multiplier": 25000,
       "unit": "ポンド",
-      "long": 96421,
-      "short": 13899,
-      "net": 82522,
-      "delta1W": 17416,
-      "delta4W": 6251,
+      "long": 92094,
+      "short": 14036,
+      "net": 78058,
+      "delta1W": -4464,
+      "delta4W": 5176,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 75758,
-          "long": 93173,
-          "short": 17415
-        },
         {
           "date": "2026-08-11",
           "value": 79027,
@@ -321,6 +315,12 @@
           "value": 82522,
           "long": 96421,
           "short": 13899
+        },
+        {
+          "date": "2026-09-29",
+          "value": 78058,
+          "long": 92094,
+          "short": 14036
         }
       ],
       "historyMetric": "ネット建玉",
@@ -328,8 +328,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": 2.9430863116264345,
-        "4W": 1.0563408666729928
+        "1W": -0.730254594039917,
+        "4W": 0.8467288930892944
       },
       "confidence": 0.78,
       "note": "",
@@ -341,27 +341,21 @@
       "symbol": "AU",
       "group": "defensive",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
       "sourceUrl": "https://publicreporting.cftc.gov/resource/72hh-3qpy.json",
-      "price": 4376.39990234375,
+      "price": 4179.7001953125,
       "priceSource": "Yahoo Finance GC%3DF 報告日終値",
       "multiplier": 100,
       "unit": "oz",
-      "long": 135699,
-      "short": 8310,
-      "net": 127389,
-      "delta1W": -5727,
-      "delta4W": -17358,
+      "long": 131711,
+      "short": 11393,
+      "net": 120318,
+      "delta1W": -7071,
+      "delta4W": -16453,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 130766,
-          "long": 139809,
-          "short": 9043
-        },
         {
           "date": "2026-08-11",
           "value": 137662,
@@ -403,6 +397,12 @@
           "value": 127389,
           "long": 135699,
           "short": 8310
+        },
+        {
+          "date": "2026-09-29",
+          "value": 120318,
+          "long": 131711,
+          "short": 11393
         }
       ],
       "historyMetric": "ネット建玉",
@@ -410,8 +410,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": -2.5063642240722657,
-        "4W": -7.596554950488281
+        "1W": -2.9554660081054687,
+        "4W": -6.876860731347656
       },
       "confidence": 0.78,
       "note": "",
@@ -423,7 +423,7 @@
       "symbol": "JPY",
       "group": "defensive",
       "classification": "先物想定元本",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC",
@@ -432,18 +432,12 @@
       "priceSource": "FRED DEXJPUS",
       "multiplier": 12500000,
       "unit": "円",
-      "long": 92923,
-      "short": 85500,
-      "net": 7423,
-      "delta1W": -15747,
-      "delta4W": 84465,
+      "long": 77429,
+      "short": 91590,
+      "net": -14161,
+      "delta1W": -21584,
+      "delta4W": 88027,
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": -60825,
-          "long": 75758,
-          "short": 136583
-        },
         {
           "date": "2026-08-11",
           "value": -53070,
@@ -485,6 +479,12 @@
           "value": 7423,
           "long": 92923,
           "short": 85500
+        },
+        {
+          "date": "2026-09-29",
+          "value": -14161,
+          "long": 77429,
+          "short": 91590
         }
       ],
       "historyMetric": "ネット建玉",
@@ -492,8 +492,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": -1.2300037492970068,
-        "4W": 6.597591076673123
+        "1W": -1.6859338873961132,
+        "4W": 6.87582015872024
       },
       "confidence": 0.72,
       "note": "正値は円買い、負値は円売り。ドル円でドル換算する。",
@@ -505,7 +505,7 @@
       "symbol": "UST",
       "group": "defensive",
       "classification": "先物想定元本（額面）",
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "frequency": "週次",
       "delay": "火曜基準・原則金曜公表",
       "source": "CFTC TFF",
@@ -513,26 +513,20 @@
       "multiplier": 100000,
       "unit": "ドル額面",
       "assetManager": {
-        "long": 3318584,
-        "short": 787200,
-        "net": 2531384,
-        "delta1W": -103596,
-        "delta4W": -60688
+        "long": 3506513,
+        "short": 729982,
+        "net": 2776531,
+        "delta1W": 245147,
+        "delta4W": 172318
       },
       "leveragedFund": {
-        "long": 468569,
-        "short": 2395516,
-        "net": -1926947,
-        "delta1W": -58821,
-        "delta4W": 207392
+        "long": 510579,
+        "short": 2547011,
+        "net": -2036432,
+        "delta1W": -109485,
+        "delta4W": 26070
       },
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 2594679,
-          "long": 3318443,
-          "short": 723764
-        },
         {
           "date": "2026-08-11",
           "value": 2554411,
@@ -574,6 +568,12 @@
           "value": 2531384,
           "long": 3318584,
           "short": 787200
+        },
+        {
+          "date": "2026-09-29",
+          "value": 2776531,
+          "long": 3506513,
+          "short": 729982
         }
       ],
       "historyMetric": "資産運用会社ネット建玉",
@@ -581,8 +581,8 @@
       "historyChart": "line",
       "values": {
         "1D": null,
-        "1W": -10.3596,
-        "4W": -6.0688
+        "1W": 24.5147,
+        "4W": 17.2318
       },
       "confidence": 0.62,
       "formula": "資産運用会社のネット建玉変化 × $100,000額面",
@@ -602,13 +602,9 @@
       "values": {
         "1D": null,
         "1W": -1.897664450415547,
-        "4W": -1.1503473598700245
+        "4W": 1.58545960757358
       },
       "history": [
-        {
-          "date": "2026-08-21",
-          "value": -2.7358069674436045
-        },
         {
           "date": "2026-08-28",
           "value": -0.8244612697619196
@@ -645,11 +641,6 @@
             "date": "2026-08-28",
             "yen": -131938537000,
             "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001vcjs-att/stock_val_1_260804.xls"
-          },
-          {
-            "date": "2026-08-21",
-            "yen": -437811189000,
-            "url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000001uvgj-att/stock_val_1_260803.xls"
           }
         ],
         "usdJpy": 160.03
@@ -661,37 +652,17 @@
       "symbol": "BTC",
       "group": "risk",
       "classification": "実測純フロー",
-      "date": "2026-09-25",
+      "date": "2026-10-02",
       "frequency": "日次",
       "delay": "米国市場終了後に順次確定",
       "source": "Farside Investors",
       "sourceUrl": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
       "values": {
-        "1D": -0.011800000000000001,
-        "1W": 2.2395,
-        "4W": 2.5677
+        "1D": 0.0024,
+        "1W": 0.053600000000000016,
+        "4W": 2.1574
       },
       "history": [
-        {
-          "date": "2026-08-28",
-          "value": -0.2019
-        },
-        {
-          "date": "2026-08-31",
-          "value": 0.21669999999999998
-        },
-        {
-          "date": "2026-09-01",
-          "value": -0.2365
-        },
-        {
-          "date": "2026-09-02",
-          "value": 0.1011
-        },
-        {
-          "date": "2026-09-03",
-          "value": 0.7308
-        },
         {
           "date": "2026-09-04",
           "value": 0.1746
@@ -750,7 +721,27 @@
         },
         {
           "date": "2026-09-25",
-          "value": -0.011800000000000001
+          "value": 0.1345
+        },
+        {
+          "date": "2026-09-28",
+          "value": 0.031
+        },
+        {
+          "date": "2026-09-29",
+          "value": 0.06620000000000001
+        },
+        {
+          "date": "2026-09-30",
+          "value": -0.1487
+        },
+        {
+          "date": "2026-10-01",
+          "value": 0.1027
+        },
+        {
+          "date": "2026-10-02",
+          "value": 0.0024
         }
       ],
       "historyMetric": "現物ETF日次純フロー",
@@ -762,29 +753,29 @@
       "loadState": "取得成功",
       "raw": {
         "latest": {
-          "date": "2026-09-25",
-          "usdM": -11.8
+          "date": "2026-10-02",
+          "usdM": 2.4
         },
         "last5": [
           {
-            "date": "2026-09-21",
-            "usdM": 999.0
+            "date": "2026-09-28",
+            "usdM": 31.0
           },
           {
-            "date": "2026-09-22",
-            "usdM": 714.7
+            "date": "2026-09-29",
+            "usdM": 66.2
           },
           {
-            "date": "2026-09-23",
-            "usdM": 346.9
+            "date": "2026-09-30",
+            "usdM": -148.7
           },
           {
-            "date": "2026-09-24",
-            "usdM": 190.7
+            "date": "2026-10-01",
+            "usdM": 102.7
           },
           {
-            "date": "2026-09-25",
-            "usdM": -11.8
+            "date": "2026-10-02",
+            "usdM": 2.4
           }
         ]
       }
@@ -798,22 +789,22 @@
       "focus": "利下げ・利上げ観測、インフレ指標、米国債利回り",
       "items": [
         {
-          "title": "10-year Treasury yield hits 5.1% for first time in 19 years - CNN",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxdG1sZTlZdGpENnhEM2hLaTZWWXZpRkY5ZjZka0NXd3RaVzNuUEZRV2dFVUVjbTBremNRT2VfVHNGQlpGeHNqOGhkQmhaaUZKZXJzVFhhOFFralA3QUdWaHhXNW5nZzVoMkFB?oc=5",
-          "source": "CNN",
-          "publishedAt": "2026-09-23T18:31:35+00:00"
+          "title": "Battered bond market braces for a new era of interest rates - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUFJEcnNjUGNwM1N4MlNkdG1pZ0VwVmt4cWhUZ2t0UkN4aHlRNzVyR3hCd2dUMG1FRWszT05VOUN4MUhDSGhXQUhIamhNWWJJNUpGXzZWcFc2Mk5Hcl9yNXBaaWVDVDlZQWg0d2xIRGl0RFhqWjJlR1ZORGlrNXRmdGZxSF9URFQ3Zzc5d2dER1g4U3hvZDZXMHNKVlhFaGRBRmRKRVJR?oc=5",
+          "source": "Reuters",
+          "publishedAt": "2026-09-30T00:47:37+00:00"
         },
         {
-          "title": "The Robust U.S. Economy Powers Through Rate Hikes and Rising Bond Yields - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90YXlaem55eWk3bnFDQ3FXQXN4SVNGSDg0cFB1UDRiZl8zMmducUlRQjdGc0hEcTRSZ1pITzJhNFVXT1FEQ0Y4bEdnVkhxTHpjTDRYckdlcEVSTUJMVGY2MHN0Wk5LQnZXUzBYQ3ZQOXZjaWwwNlVBZw?oc=5",
-          "source": "WSJ",
-          "publishedAt": "2026-09-25T01:00:00+00:00"
+          "title": "Why Are Bond Yields Soaring? - insights.som.yale.edu",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZREZrUG9ic1pFZFBwajBOM0dUbDBBNmhpR1l4VzFEZkhSZkdBLXVfVXZCS0dtQUxidjZNUUh5VWNFY1hTRjI2RjB3NGJnVHVlMHJpVlIwN1ViZU83SGNzNXJTYXlVY195bFlFWGs4U0NjQndr?oc=5",
+          "source": "insights.som.yale.edu",
+          "publishedAt": "2026-09-30T16:05:37+00:00"
         },
         {
-          "title": "Implications of rising bond yields - Vanguard Corporate",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSXo5d0VnU1A4OXRGQlNjM3hjR01hV21aX0VCb29oU3FadkdiRmtCdllON0VETHdnck9RLU42YTJxaHpoMEdSU29mNl9DUWVETG1YZHR3VElJYTFPVzktNEJNSGNVWW45OGhjSzF2WUJBUzhkbFAxSEk2UV9rcEh3NGkwc0w3OE5OWmhtUjlHN3p4b2FPeEZkRDBxZkc5Vy1FUTJYdVBhNXZzejJD?oc=5",
-          "source": "Vanguard Corporate",
-          "publishedAt": "2026-09-23T04:00:00+00:00"
+          "title": "Persistently Higher Treasury Yields Could Add Trillions to the Debt Over 10 Years - Cato Institute",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObTdWXzNZSnFZckxLYy10cUx4NWxRTFZ2MUIzMW92SkI3dGxDXzJ1QmlnUnRPNnpPRVdkNzRwNkZHZW4yOFF3MkVBOV9aczdzdU9kenVrUFREZ3BCUVRmWWlWMU0tSHVRcVNmd21yNXlQeHJmMzI0RlVHdWUwQnRJSDVjM0ViMTlrZU45N0JjcFYwTEdBeERXeVhGR1Y3aHVaVkE?oc=5",
+          "source": "Cato Institute",
+          "publishedAt": "2026-10-01T16:42:36+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=Federal+Reserve+interest+rates+inflation+bond+yields+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
@@ -826,22 +817,22 @@
       "focus": "日銀の政策修正、国内金利、日米金利差と円キャリー",
       "items": [
         {
-          "title": "Japan's bond 'falling knife' stalls repatriation rush - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRG1BRVp6QjNMSmVsZEcwN1pwVDZDX1RoR2tBUG1DT2hhMFBQUHFhTnZZcWlOSHJVRThKamhGRkpFeWkyTFJaUG10ZW9tWDNSRzJUN3FDQnA1Qzd1aV9sS3hlUWtlSjJ3S0NQbXFISDN0Umc4Mnp0cDJQMVRsUEZjQS1hMnR5RTVqdlYyZE5fOWZQM0xxaDBsX2QwSUJHWnRkZ3d5OXN3dVQ?oc=5",
+          "title": "Bank of Japan debated need for faster rate hikes, July minutes show - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM0Rid1RQcVo2QlNMTTZDOGEyYmRtQnFYVVJDN1pBMGpwNGxzS19vN1VBMHVXbDFtWkZHOVJhZTNxaWptMGsxbkxDQ2ZSNjZkNFdMTUQwZEhuaW1FUGhHUnJhWGU1eU5NQ1QwRWpDUURJQS1HUUdNYmFZbldSdFk4VGRXSGhUTkVPbk1QSUxzMV9ZckpvMWJYaTNPaWswYnpCTkpEUk9xNUhFMjEyVDRJek93?oc=5",
           "source": "Reuters",
-          "publishedAt": "2026-09-25T03:33:00+00:00"
+          "publishedAt": "2026-09-28T00:58:00+00:00"
         },
         {
-          "title": "Yen vulnerable with Japan on holiday after BOJ disappoints - The Japan Times",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTldhRkUwNUZxSHZzeFU5cjdKYmY2bUdFVnNUUDlTVUtQUk10bXp0cjJjMnRzN0IxbXE2Sy1vVk1lOUtNazIzaVlTeTdncVVEaERPbjZvam55ajBwZkt1RDV2NEstcW9teEpYSkpSb21sMkgwaV9HMzVEMWEycnQ5ejlURDBxZVE?oc=5",
-          "source": "The Japan Times",
-          "publishedAt": "2026-09-21T01:56:00+00:00"
+          "title": "Operation Save the Yen: Japan partially turns off the cheap money tap, with a little help from its ‘American friend’ - EL PAÍS English",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxONkhoX280SkYyRy1fMWpWZ1ZQblFvQnQtSThhcnp5VmY3b2tVX0NTQ1YzZ1RmTHIxS0tPbDVNaTFEZTBGV1EyWkdEb0RLVlRYUWJKbEVxaFlMeFRSd0NSRFpGYjROaUd5LWpLTVkzNmNwU1ZSN1Rac1IxX2RhSjEtbGhjMlZoRmRjY21uR3pCN0d2TjlPTFEzSjdSX0xkNlRhV2JFZUNCek9KeXRGUGY5dG85VnpnNjA0amJfYVhuYWIwX3pFZGoxb3l4OVVOa0FBVF80Unp5b2NTTHlLNU5BcXVhQjdXU2pjc09yLTkwMkVkc0QtNnozUXdHa1ZKOHkzbWNCdVpQQdIBmwJBVV95cUxOOXQ3MTZLUEZBX3dnanJmeEVDU3hmOVVtdjZZVUdfb0UtSEJSUUFSWXJDb3BXNkdXYTZmTzJGdEt0WjhWU2w4U2d3VUhkOWxzbkdzcnROMHFndUJxZVBIVUlrODl2d3NpbWxPMUNDWWlMbHc1cW1zZlNabEJJNG5WU3l3YXloRXR1bjY1aUVhMVAtZU9MWjlqMlVEc3RYSmFXbEFOZ0g5RVlrTVVRMnFxWWRoZVJpQk5SUmoxVHJlcERPc1prVjhLWXktTGloNTl4YmlhbFhmS0lvZjdaVmVad2k4Qk00eUVNSzRubzVWdExCUE5HcHk4MklmSXYtQUNOS0s5NDMwcmtNc3h3X29KTWxfeUU1NkhDemlj?oc=5",
+          "source": "EL PAÍS English",
+          "publishedAt": "2026-09-27T04:00:00+00:00"
         },
         {
-          "title": "Hedge Funds Cut Bullish Yen Bets as BOJ Held Back on Rate Vows - Bloomberg",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVUhmLWtIUy0ybmZpbnVCaE1jNUhydWxGaEN5eXY2M1hGVzNaLUhFZzFsT3pHdlZTSEp2cW5haUFPOUxiNXBCd0ZaWjh5TkZyWjVQRmZlanplZFRXdHI2VHRmYnBxT1pBbC1WR0Mzbl9ZXzh1WVpJZThZU21tS2ZMTVdFRWlmVWI1eTVtYUhjWGY4ZEhNMy1GeHMxUDFqeExqTmdzNmRDNzZ4eFZiMGxzS0l0TQ?oc=5",
-          "source": "Bloomberg",
-          "publishedAt": "2026-09-25T20:06:07+00:00"
+          "title": "BOJ debated faster rate hikes in September, government pushed back - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdzJocjN0YVk0QkZXc0dZRUc5dWgwdHhOQmxBSWNsV0JfVnBMd2JIY0U0OGwzdnh0V0VjamtrWnhQeHNSTC1abDZraUI5OGN2MTFwZDBXN2tlakJHMWNqeGZVUWFUTVJIYzhiYmMyaGNET0NZYlFaTU5OQUJZUDBuS1VGQWZYMkotb2hCZm56UThuSEpjS2FycnZUcldzdTF1Vm43bG10eVQ0S3pWc1dmdkVkN24xZFZBMDA4?oc=5",
+          "source": "Reuters",
+          "publishedAt": "2026-10-01T00:15:00+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=Bank+of+Japan+BOJ+interest+rates+yen+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
@@ -854,22 +845,22 @@
       "focus": "原油供給、海上輸送、安全資産需要",
       "items": [
         {
-          "title": "Oil Prices Fall for Fourth Day as Supply Concerns Ease - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcEZWRkFoeVdVQnQtNnE2OXRQM2ViMkhkdk41di05ZWhjQXgwRGJFaW12REM2ZnVxMl9zYUR6Vlh2NVVJRFk4X2RUUk9HRXZDUVVHWmw0YjRlcDFsTTlwQjYxZGlwRnVXTUUxTnU5ZzFXMy02Ri1TNkE3Y1ZTa29yWFR2VVZoYWQ0eEttX081M0w5bkpIZ1FmNFdOOGNINWR3LW9N?oc=5",
-          "source": "WSJ",
-          "publishedAt": "2026-09-21T20:01:00+00:00"
+          "title": "Oil prices slip as Middle East supply risks persist (CO1:COM:Commodity) - Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLXY1am11MFIyQmlST0VCOG1lSnJmMlJDVF9BNGFYNFhJMHFMaTd4ZGRjdmVJUnVTVVV3akVjQ28yOXQ4RXkySktyMmJqOUNxSUhRU1hBd1dhWl9pZ3FvU05pdlRVcnFKUFpJWW5tR3dOYnN0WWxxaGJ0cHlENUg1ZF9Hd3IwLTdqaVpyeFYxaVVrUDg?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-09-29T12:10:45+00:00"
         },
         {
-          "title": "Oil prices retreat as Middle East supply concerns ease amid diplomatic talks - Oil & Gas Journal",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUWZGRmt2cl9iX1FtTEh1NmxuRkJrbS1INXNEbG1vYVBIVHZ3NXhLWWhEM2JvNkVMaFBYWFNjUmg1OF9neEp1ZUxJT1JmYVB4ZEd2WFp3djZ3andGb2lZX19IX2hkZUdldFh3R1JzWFJsR1hqaVJmQ1QtekM5TnFDS2xzbm9KRUZTVHBNTWFIcFNVcWRCRFpxdW1pcmR6SUZ5c2NEQjBWRzNibUU4b3ViOVV3XzFPU2VNT0tCMm9XajVrLWhudjhUTmN6XzNGazFQWVEtVWtETXhPRFJxWHc?oc=5",
-          "source": "Oil & Gas Journal",
-          "publishedAt": "2026-09-21T18:31:37+00:00"
+          "title": "Iran War Threatens a Prolonged Hit to Global Energy Markets - EnergyNow.com",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOLVhOU1hzTGxCWGJhRHJnQ3JqY0VZX0ZvbkI0UHV3U19MX0IwYzJRSjVkeTJEcHRsUTk1cVZVRVFDMGlaWEY1VkpwcmtyRFZ6THdJTmF6d1hpN3JxZHVGV1htT0gxU1dQRmFVOWh0Rk92SFNMbEVSbEdHYTB2dkpBcHpQamVLa0VwNzNRV3Zua2JfZW56?oc=5",
+          "source": "EnergyNow.com",
+          "publishedAt": "2026-10-01T02:20:42+00:00"
         },
         {
-          "title": "Brent Climbs Above $101 as US-Iran Talks and Middle East Supply Risks Remain in Focus - Yahoo Finance UK",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6dGZnb2EzVHRjc2JET0FoV0Y4c1FjRVZQMFBDUFE1YV84Q2RHMHc2ZS03NUlFT3Q4aDFyOVJwWThyWmY1TGI2SXlobUw2N1VtS1ZfZ2pKaXlnS1NsZ2VXaEQyOHNuRHVPOERWd1VsMjk4NFhsTFRjb2JTN1B4T0E?oc=5",
-          "source": "Yahoo Finance UK",
-          "publishedAt": "2026-09-22T09:42:07+00:00"
+          "title": "Middle East Oil Recovery Meets Fragile Diplomacy, Keeping Crude Prices Unstable - ChemAnalyst",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMFB2OTRCLXVxenpOT2xpSkJ2VkRUaXB2MTlHa0RkZTJvR0lMSC0taDZ1NjJIaHFFcW1KNUdXY1NDR09CNHViNjd0N003UHRFZWdIcjAzUTlNSmNEckppWm1HV0hnSFhkaVRldE1iSFBpY3dzbU1PaGU5NHlLQl9ZNFdYeDAydFZoTnpRY3UzM3poY1BFbDRNSDVaMEFFVWZWSmFJZy1PUUtTV3hMcUFUUEJFeTNYV0o0MHo3ZXRR?oc=5",
+          "source": "ChemAnalyst",
+          "publishedAt": "2026-09-28T16:36:45+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=geopolitical+risk+oil+supply+Middle+East+shipping+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
@@ -882,22 +873,22 @@
       "focus": "景気対策、不動産、製造業、資源需要",
       "items": [
         {
-          "title": "The Plaza Accord and Its Relevance for China - Carnegie Endowment for International Peace",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNUV6cVZxLVBzUTRob3VxVVhBVGJHZWRYVFZGQXZ5UHlJZnhnLU5sczNKMVV6Y0w2VG0xNVZORl91T28yclJKQkFHRFh3LW8yWENoWFk4WWtGeXVUNzAxMC12WjZKbDdMZkVYWDl5TUl2UFB6YkhtdTlWNGlDeDJDdWU5RHpnMWxjdmltWkRqUXBRcUF4V2pzeDZEcHh2ZzEtLUpOMmliY1JZZw?oc=5",
-          "source": "Carnegie Endowment for International Peace",
-          "publishedAt": "2026-09-25T15:23:55+00:00"
+          "title": "Chinese factory activity expands in September amid AI boom - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR2hBclpDSnZBY0I0SjlMLVdOb3psd0dpV3NpNERFTTB5TkE1eXEzNm43TXVHV1BqMGZIZXYyZXJ3WVFBa0lXYXc4aWxsbXItUGtkQUdzUVMzQ2lMQmtxNTJRYUROYlBZbGlPVGJJclI0YlpMcEdJVXpWakRjU3QzeFM5Sm4tNnh5VVd4MnREbHN0VkIxOG51bjNnUUI5aHJGQmdLLXZnYnBld0N1Ym84?oc=5",
+          "source": "Reuters",
+          "publishedAt": "2026-09-30T02:16:00+00:00"
         },
         {
-          "title": "What’s happening this week in economics? - Deloitte",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
-          "source": "Deloitte",
-          "publishedAt": "2026-09-22T07:00:00+00:00"
+          "title": "China factory activity snaps 2-month contractionary streak in September - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQUs4QkhHU05ya0FfTUpHOUsyanlJVlE0cnQ1ejFnZkR3TUtMajN6MU1wVTJvbTBFZWx0c201N043eVBhUFFYd2hqUkQwTFZ3bkpqcWJRQ2xFS19NUmZPZW5WRDBsVG8wdzJNdkF1UDhaTGVMUDJaaVprSmxPd2xJdDN3Unl0d1I3UEHSAY8BQVVfeXFMTV9MYXZlMnRhYWF1UVNhQ2hiX0FrWnNtNXNmME9GX3JXS3pnejg5bTFUQzhnSEtTODJ0bjhOcTNUX2FjUTliaHVOcU5zQm5JQ3RvWS1ReGxFcjNwcFJJRlp0S3AyTThpUVFmQ01kajRZTm5mRUxtMTlNMVFBb1FQT1ZURnNWbzhGd0JTTjlNdGM?oc=5",
+          "source": "CNBC",
+          "publishedAt": "2026-09-30T01:35:00+00:00"
         },
         {
-          "title": "China’s Economy Is Growing Apart - The Dark Side Of The Boom",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS0p6X3V3UkRFVHZ3V01Cd0ZfUHNMY2lFUzhjQVRyaUJxZ05ZZEdEZTFvajczZGZWOVItTTluZ1pZbXIzQzJTenJEY1pPLTFYdXprdmJocEtSQnlSd1FRSkNzYVQ4UFFITTVpbFFiTVVvRXZEampDLXFiTGpaRkdJbw?oc=5",
+          "title": "China’s Mini Stimulus Is Designed to Hit the GDP Target, Not Restart the Boom - The Dark Side Of The Boom",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWjZIQWJKZ001SGxvSHdwVnhFTnZ1ek4tU196OW9jRzZxWGEtOUdWU01RSndLdHp1YUZ3UEpKdERCRzQ5bGRPckVrcTZZeXQ5T3JjQk8tNjl6UXZGcGlWczZiWlJmUERIRlZ2b2Z3NmNZLS1oSmt2WUJUQmF6Wm41bVB3?oc=5",
           "source": "The Dark Side Of The Boom",
-          "publishedAt": "2026-09-20T07:31:14+00:00"
+          "publishedAt": "2026-09-30T04:15:53+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=China+economy+stimulus+property+manufacturing+demand+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
@@ -913,19 +904,19 @@
           "title": "Weekly market commentary - BlackRock",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
           "source": "BlackRock",
-          "publishedAt": "2026-09-21T07:00:00+00:00"
+          "publishedAt": "2026-09-28T07:00:00+00:00"
         },
         {
-          "title": "Bond Selloff Pauses, Stocks Edge Higher as Market Sentiment Cautiously Improves - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMlFzS1U4YThCRTZHYklvTUZUQVE1eDRldXNUS1R5bUVVZDJXZ0FYNV8ybkUxLWVJdGJKZVRpaEF4S3VhRnRxUTdkZkhwOXdzOVhCTVF5N19Ta1phZ0pKYlo1MU9sZ1Z5U2k5dTRYcDlhanUxVDNXS0tXR0xZd3U5WV82aDRlcEJjZXRfak54dWFscXNIbEhWY016dnNITzRvZ3E2Z3VNQjZHRFZQMk9wN0lnWWRmZUEtYXVRcUdYbw?oc=5",
-          "source": "WSJ",
-          "publishedAt": "2026-09-25T12:25:00+00:00"
-        },
-        {
-          "title": "As 5% Treasury yields lose shock value, investors start worrying about 6% - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZGNNand1cUh2bEZfdjZSUEI0TTRsbTRmc3kyRk9ZdGNMZ1VWdEMwWDVFTVpmUjFnUFNwRlhXQklrUWR6UEc2QUhaWFBKQUQ0M04xRjBjck5tWTA1cS0yRmNNN1BJV2JvYTBnLVpsczZzazN5alR0OW5hdDVNMW1majRMcFdCcXpYQzFWVjlsbGM?oc=5",
+          "title": "Battered bonds draw support from falling oil prices - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSXl3a0V4VjdBS1ZlOENTNmpGcmdEa1BNaDh3N21xanZ2Q1JYRGEwbV9QTGdMN21oV1N5Ukw3SEhEa1ZLUENNNTFuVWV3cjQ1RFR2cWtCdlJBNVp2bDBsZTExZWYzVW44eGtJMHFiUkVyOG9xU3c3Z2Y5THFDWDNLMA?oc=5",
           "source": "Reuters",
-          "publishedAt": "2026-09-23T17:25:00+00:00"
+          "publishedAt": "2026-09-26T01:09:47+00:00"
+        },
+        {
+          "title": "What’s happening this week in economics? - deloitte.com",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
+          "source": "deloitte.com",
+          "publishedAt": "2026-09-29T07:00:00+00:00"
         }
       ],
       "feedUrl": "https://news.google.com/rss/search?q=global+markets+risk+sentiment+stocks+bonds+dollar+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
